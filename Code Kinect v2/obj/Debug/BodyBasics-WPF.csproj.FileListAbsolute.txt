@@ -1,0 +1,197 @@
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\App.g.cs
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\App.g.cs
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\Lab\Kinect\BodyBasics-WPF - Copy\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\App.g.cs
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\App.g.cs
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\App.g.cs
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\Desktop\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\App.g.cs
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\BodyBasics-WPF - Copy (1) - Copy - Copy - Copy\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\App.g.cs
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\OneDrive - Hanoi University of Science and Technology\Tài liệu học HUST\V1\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Downloads\V1\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Downloads\V1\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Downloads\V1\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Downloads\V1\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\Downloads\V1\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\Downloads\V1\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\V1\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Downloads\V1\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Downloads\V1\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Downloads\V1\obj\Debug\App.g.cs
+C:\Users\ADMIN\Downloads\V1\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\Downloads\V1\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\Downloads\V1\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\V1\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\Downloads\V1\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\V1\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\Downloads\V1\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Downloads\V1\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Downloads\V1 - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Downloads\V1 - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Downloads\V1 - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Downloads\V1 - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\Downloads\V1 - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\App.g.cs
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Downloads\V1 - Copy\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\App.g.cs
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Downloads\V1 - Copy - Copy\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\BodyBasics-WPF.exe.config
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\App.g.cs
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\BodyBasi.A967F1E7.Up2Date
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\BodyBasics-WPF.exe
+C:\Users\ADMIN\Desktop\Code vòng tay\Code Kinect v2\obj\Debug\BodyBasics-WPF.pdb
