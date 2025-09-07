@@ -1,16 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Code Kinect v2\\",
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\e58c9dc68e2e6e3c4cfe5bbaade86058d065887918411fd4fe0790d6316a0f8d\\UIElement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{269A7B21-FBFE-4E7A-8BBE-C8DE2EC0D833}|BodyBasics-WPF.csproj|C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Code Kinect v2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{269A7B21-FBFE-4E7A-8BBE-C8DE2EC0D833}|BodyBasics-WPF.csproj|C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{269A7B21-FBFE-4E7A-8BBE-C8DE2EC0D833}|BodyBasics-WPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{269A7B21-FBFE-4E7A-8BBE-C8DE2EC0D833}|BodyBasics-WPF.csproj|C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Code Kinect v2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{269A7B21-FBFE-4E7A-8BBE-C8DE2EC0D833}|BodyBasics-WPF.csproj|C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{269A7B21-FBFE-4E7A-8BBE-C8DE2EC0D833}|BodyBasics-WPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -32,9 +32,9 @@
               "DocumentIndex": 0,
               "Title": "UIElement.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\e58c9dc68e2e6e3c4cfe5bbaade86058d065887918411fd4fe0790d6316a0f8d\\UIElement.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e58c9dc68e2e6e3c4cfe5bbaade86058d065887918411fd4fe0790d6316a0f8d\\UIElement.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e58c9dc68e2e6e3c4cfe5bbaade86058d065887918411fd4fe0790d6316a0f8d\\UIElement.cs",
               "ToolTip": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\e58c9dc68e2e6e3c4cfe5bbaade86058d065887918411fd4fe0790d6316a0f8d\\UIElement.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e58c9dc68e2e6e3c4cfe5bbaade86058d065887918411fd4fe0790d6316a0f8d\\UIElement.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e58c9dc68e2e6e3c4cfe5bbaade86058d065887918411fd4fe0790d6316a0f8d\\UIElement.cs",
               "ViewState": "AgIAAD8VAAAAAAAAAAArwEwVAAAGAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-06T13:27:13.275Z",
@@ -44,26 +44,24 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Code Kinect v2\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Code Kinect v2\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-13T11:44:53.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T11:44:53.589Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Code Kinect v2\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Code Kinect v2\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAcwCQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T10:05:36.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T10:05:36.617Z"
             }
           ]
         }
