@@ -187,18 +187,26 @@ namespace KinectRedMarker
                 if ((DateTime.Now - lastSent).TotalMilliseconds >= 50)
                 {
                     double distToRed = 0.0;
+                    double redX = 0, redY = 0, redZ = 0;
+
                     if (redPt3D.HasValue && spineShoulder.Z > 0)
                     {
                         double dx = redPt3D.Value.X - spineShoulder.X;
                         double dy = redPt3D.Value.Y - spineShoulder.Y;
                         double dz = redPt3D.Value.Z - spineShoulder.Z;
                         distToRed = Math.Sqrt(dx * dx + dy * dy + dz * dz);
+
+                        redX = redPt3D.Value.X;
+                        redY = redPt3D.Value.Y;
+                        redZ = redPt3D.Value.Z;
                     }
 
-                    string msg = $"{distToRed:F3}," +   // ✅ thay 3 số XYZ marker đỏ bằng 1 số khoảng cách
-                                 $"{rightWrist.X},{rightWrist.Y},{rightWrist.Z}," +
-                                 $"{rightElbow.X},{rightElbow.Y},{rightElbow.Z}," +
-                                 $"{(greenPt3D?.X ?? 0)},{(greenPt3D?.Y ?? 0)},{(greenPt3D?.Z ?? 0)}";
+                    string msg = $"{distToRed:F3}," +
+                                 $"{redX:F3},{redY:F3},{redZ:F3}," +   // an toàn ngay cả khi redPt3D == null
+                                 $"{rightWrist.X:F3},{rightWrist.Y:F3},{rightWrist.Z:F3}," +
+                                 $"{rightElbow.X:F3},{rightElbow.Y:F3},{rightElbow.Z:F3}," +
+                                 $"{(greenPt3D?.X ?? 0):F3},{(greenPt3D?.Y ?? 0):F3},{(greenPt3D?.Z ?? 0):F3}";
+
                     byte[] data = Encoding.UTF8.GetBytes(msg);
                     udpClient.Send(data, data.Length, pythonEndPoint);
                     lastSent = DateTime.Now;
