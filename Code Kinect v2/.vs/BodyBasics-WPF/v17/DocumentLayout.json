@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{269A7B21-FBFE-4E7A-8BBE-C8DE2EC0D833}|BodyBasics-WPF.csproj|C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{269A7B21-FBFE-4E7A-8BBE-C8DE2EC0D833}|BodyBasics-WPF.csproj|c:\\users\\admin\\desktop\\code v\u00F2ng tay\\hapticdevice\\code kinect v2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{269A7B21-FBFE-4E7A-8BBE-C8DE2EC0D833}|BodyBasics-WPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -37,8 +37,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e58c9dc68e2e6e3c4cfe5bbaade86058d065887918411fd4fe0790d6316a0f8d\\UIElement.cs",
               "ViewState": "AgIAABsVAAAAAAAAAAArwEwVAAAGAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T13:27:13.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T13:27:13.275Z"
             },
             {
               "$type": "Document",
@@ -49,8 +48,7 @@
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-13T11:44:53.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T11:44:53.589Z"
             },
             {
               "$type": "Document",
@@ -60,7 +58,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code v\u00F2ng tay\\Hapticdevice\\Code Kinect v2\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAIwL4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAIwL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T10:05:36.617Z",
               "EditorCaption": ""
