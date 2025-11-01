@@ -88,7 +88,7 @@ handover_done = False
 root = tk.Tk()
 root.title("Kinect Handover Monitor")
 
-status_label = tk.Label(root, text="Waiting...", font=("Arial", 20), width=30, height=3)
+status_label = tk.Label(root, text="Waiting...", font=("Arial", 20), width=35, height=3)
 status_label.pack(pady=10)
 
 coords_label = tk.Label(root, text="Coords: (0.00, 0.00, 0.00)", font=("Arial", 14))
@@ -110,9 +110,14 @@ def set_motor_visual(top, bottom, left, right):
     canvas.itemconfig(motor_ids["left"],   fill="red" if left else "white")
     canvas.itemconfig(motor_ids["right"],  fill="red" if right else "white")
 
+# ======================
 # Hàm update GUI
-def update_status_ui(status, dist, coords=None):
-    status_label.config(text=f"{status}\n(d={dist:.2f} m)")
+# ======================
+def update_status_ui(status, dist, red_dist, coords=None):
+    status_label.config(
+        text=f"{status}\n"
+             f"d={dist:.2f} m | red_dist={red_dist:.2f} m"
+    )
     if "Nguy hiểm" in status:
         status_label.config(bg="red", fg="white")
     elif "giao đồ" in status:
@@ -125,9 +130,6 @@ def update_status_ui(status, dist, coords=None):
         coords_label.config(text=f"Coords: ({coords[0]:.2f}, {coords[1]:.2f}, {coords[2]:.2f})")
     root.update_idletasks()
 
-# ======================
-# Label buttons
-# ======================
 # ======================
 # Label buttons
 # ======================
@@ -172,7 +174,7 @@ for i in range(1, 4):
 def process_coords(x, y, z):
     global curOn, curOff, currentDir
     r = math.sqrt(x*x + y*y)
-    if r < 0.13:
+    if r < 0.1:
         currentDir = -1
         curOn, curOff = ON_MIN, OFF_MIN
         return
@@ -251,12 +253,12 @@ def tick():
         red_dist = float(np.linalg.norm(red - green))
 
         # --- HANDOVER DONE CHECK ---
-        r_marker = float(np.sqrt(x*x + y*y + z*z))
+        r_marker = float(np.sqrt(x*x + y*y))
         if not handover_done:
             if r_marker < 0.1:
                 if handover_start is None:
                     handover_start = now
-                elif now - handover_start >= 3.0:
+                elif now - handover_start >= 2.0:
                     handover_done = True
                     print("🎉 Handover completed!")
             else:
@@ -264,7 +266,7 @@ def tick():
 
         if handover_done:
             set_motor_visual(0,0,0,0)
-            update_status_ui("✅ Giao đồ xong", dist_red, p_wrist)
+            update_status_ui("✅ Giao đồ xong", dist_red, red_dist, p_wrist)
             root.after(10, tick)
             return
 
@@ -276,15 +278,21 @@ def tick():
         else:
             status = "✅ An toàn"
 
-        update_status_ui(status, dist_red, p_wrist)
+        update_status_ui(status, dist_red, red_dist, p_wrist)
 
-        # rung logic
+        # --- rung logic với hysteresis ---
         if status == "🤝 Vùng giao đồ":
-            if red_dist > 0.15:
-                # rung tất cả liên tục
+            if not hasattr(tick, "mode"):
+                tick.mode = "all"
+
+            if red_dist > 0.35:
+                tick.mode = "all"
+            elif red_dist < 0.25:
+                tick.mode = "dir"
+
+            if tick.mode == "all":
                 set_motor_visual(1,1,1,1)
             else:
-                # chuyển sang rung định hướng
                 process_coords(x,y,z)
                 if isVibrating:
                     if now - lastVibrate >= curOn:

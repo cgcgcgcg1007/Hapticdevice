@@ -113,7 +113,7 @@ namespace KinectRedMarker
                 bitmap.WritePixels(new Int32Rect(0, 0, colorWidth, colorHeight), colorData, colorWidth * 4, 0);
 
                 // --- Tìm marker đỏ ---
-                var redPt2D = FindMarker(colorData, colorWidth, colorHeight, Colors.Red, 75);
+                var redPt2D = FindMarker(colorData, colorWidth, colorHeight, Colors.Red, 85);
                 if (redPt2D.HasValue)
                 {
                     coordinateMapper.MapColorFrameToDepthSpace(depthData, depthSpacePoints);
@@ -202,10 +202,10 @@ namespace KinectRedMarker
                     }
 
                     string msg = $"{distToRed:F3}," +
-                                 $"{redX:F3},{redY:F3},{redZ:F3}," +   // an toàn ngay cả khi redPt3D == null
                                  $"{rightWrist.X:F3},{rightWrist.Y:F3},{rightWrist.Z:F3}," +
                                  $"{rightElbow.X:F3},{rightElbow.Y:F3},{rightElbow.Z:F3}," +
-                                 $"{(greenPt3D?.X ?? 0):F3},{(greenPt3D?.Y ?? 0):F3},{(greenPt3D?.Z ?? 0):F3}";
+                                 $"{(greenPt3D?.X ?? 0):F3},{(greenPt3D?.Y ?? 0):F3},{(greenPt3D?.Z ?? 0):F3}," +
+                                 $"{redX:F3},{redY:F3},{redZ:F3}";   // an toàn ngay cả khi redPt3D == null;
 
                     byte[] data = Encoding.UTF8.GetBytes(msg);
                     udpClient.Send(data, data.Length, pythonEndPoint);
