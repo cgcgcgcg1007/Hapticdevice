@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-
+using System.Globalization;
 namespace KinectRedMarker
 {
     public partial class MainWindow : Window
@@ -184,6 +184,7 @@ namespace KinectRedMarker
 
                 // --- Gửi dữ liệu qua UDP 20Hz ---
                 // --- Gửi dữ liệu qua UDP 20Hz ---
+                // --- Gửi dữ liệu qua UDP 20Hz ---
                 if ((DateTime.Now - lastSent).TotalMilliseconds >= 50)
                 {
                     double distToRed = 0.0;
@@ -195,14 +196,22 @@ namespace KinectRedMarker
                         distToRed = Math.Sqrt(dx * dx + dy * dy + dz * dz);
                     }
 
-                    string msg = $"{distToRed:F3}," +   // ✅ thay 3 số XYZ marker đỏ bằng 1 số khoảng cách
-                                 $"{rightWrist.X},{rightWrist.Y},{rightWrist.Z}," +
-                                 $"{rightElbow.X},{rightElbow.Y},{rightElbow.Z}," +
-                                 $"{(greenPt3D?.X ?? 0)},{(greenPt3D?.Y ?? 0)},{(greenPt3D?.Z ?? 0)}";
+                    // ✅ Bổ sung thêm 3 giá trị cuối là tọa độ marker đỏ thật (redPt3D)
+                    string msg = string.Format(
+                        CultureInfo.InvariantCulture,    // ✅ THÊM DÒNG NÀY
+                        "{0:F3},{1:F6},{2:F6},{3:F6},{4:F6},{5:F6},{6:F6},{7:F6},{8:F6},{9:F6},{10:F6},{11:F6},{12:F6}",
+                        distToRed,
+                        rightWrist.X, rightWrist.Y, rightWrist.Z,
+                        rightElbow.X, rightElbow.Y, rightElbow.Z,
+                        (greenPt3D?.X ?? 0), (greenPt3D?.Y ?? 0), (greenPt3D?.Z ?? 0),
+                        (redPt3D?.X ?? 0), (redPt3D?.Y ?? 0), (redPt3D?.Z ?? 0)
+                    );
+
                     byte[] data = Encoding.UTF8.GetBytes(msg);
                     udpClient.Send(data, data.Length, pythonEndPoint);
                     lastSent = DateTime.Now;
                 }
+
 
             }
             finally
