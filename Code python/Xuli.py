@@ -5,6 +5,44 @@ import numpy as np
 import time
 import tkinter as tk
 import math
+# ======================
+# Task timing & recognition
+# ======================
+task_start_time = None
+current_task = None   # 1, 2, 3
+task_done = False
+current_condition = "Điều kiện A: Vòng Thesis không có nút"
+tray_open = False
+force_directional = False   # ép coi đỏ = xanh
+
+# ======================
+# 3-minute timer
+# ======================
+timer_running = False
+timer_start_time = None
+TIMER_DURATION = 180  # 3 phút (giây)
+
+ESP32_IP = "172.20.10.3"   # đổi đúng IP ESP32 của bạn
+ESP32_PORT = 23456         # port ESP32 lắng nghe
+
+sock_esp_tx = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+def send_vibration_to_esp(mode, motors):
+    """
+    mode: 1 = rung 3 động cơ
+          2 = rung theo hướng
+    motors: list 6 phần tử [0/1]
+    """
+    data = {
+        "mode": mode,
+        "motors": motors
+    }
+    try:
+        sock_esp_tx.sendto(
+            json.dumps(data).encode(),
+            (ESP32_IP, ESP32_PORT)
+        )
+    except Exception as e:
+        print("ESP send error:", e)
 
 # ======================
 # Math utils
@@ -116,6 +154,13 @@ coords_label.pack(pady=5)
 
 canvas = tk.Canvas(root, width=320, height=320, bg="white")
 canvas.pack(pady=10)
+gyro_label = tk.Label(
+    root,
+    text="GYRO: OFF",
+    font=("Arial", 14, "bold"),
+    fg="red"
+)
+gyro_label.pack(pady=(0, 10))
 
 center_x, center_y = 160, 160
 radius = 100
@@ -144,6 +189,33 @@ def set_motor_visual(front, fr, br, back, bl, fl):
     canvas.itemconfig(motor_ids["back"], fill="red" if back else "white")
     canvas.itemconfig(motor_ids["back-left"], fill="red" if bl else "white")
     canvas.itemconfig(motor_ids["front-left"], fill="red" if fl else "white")
+def toggle_force_directional():
+    global force_directional
+    force_directional = not force_directional
+
+    if force_directional:
+        force_btn.config(
+            text="🧭 HƯỚNG: ÉP BẬT",
+            bg="green",
+            fg="white"
+        )
+    else:
+        force_btn.config(
+            text="🧭 HƯỚNG: TỰ ĐỘNG",
+            bg="gray",
+            fg="white"
+        )
+
+force_btn = tk.Button(
+    root,
+    text="🧭 HƯỚNG: TỰ ĐỘNG",
+    font=("Arial", 14),
+    width=25,
+    bg="gray",
+    fg="white",
+    command=toggle_force_directional
+)
+force_btn.pack(pady=5)
 
 # ======================
 # Nút điều khiển độ rung
@@ -163,16 +235,24 @@ tk.Button(control_frame, text="-", font=("Arial", 16), width=3, command=lambda: 
 tk.Button(control_frame, text="+", font=("Arial", 16), width=3, command=lambda: update_level(+1)).grid(row=0, column=2)
 
 def reject_action():
-    """Stop everything permanently: called by GUI button or by ESP state signal."""
     global isVibrating, handover_done, handover_start
-    isVibrating = False
-    handover_done = True   # lock system so it never vibrates again
-    handover_start = None
-    set_motor_visual(0,0,0,0,0,0)
+    global force_directional, timer_running, timer_start_time
 
+    isVibrating = False
+    handover_done = True
+    handover_start = None
+
+    force_directional = False
+    force_btn.config(text="🧭 HƯỚNG: TỰ ĐỘNG", bg="gray", fg="white")
+
+    set_motor_visual(0,0,0,0,0,0)
     status_label.config(text="🚫 Đã từ chối", bg="gray", fg="white")
     coords_label.config(text="Coords: (0.00, 0.00, 0.00)")
-    print("System rejected: motors off and vibration disabled permanently.")
+
+    timer_running = False
+    timer_start_time = None
+    timer_label.config(text="⏱ 00:00 / 03:00")
+    timer_button.config(text="▶ Bắt đầu đếm thời gian")
 
 tk.Button(root, text="TỪ CHỐI", font=("Arial", 16), bg="red", fg="white", width=10, command=reject_action).pack(pady=5)
 
@@ -204,13 +284,102 @@ def vibrate_pattern_front(mode):
 
 btn_frame = tk.Frame(root)
 btn_frame.pack(pady=5)
+
 for i in range(1, 4):
-    tk.Button(btn_frame, text=f"{i}", font=("Arial", 16), width=5, height=2,
-              command=lambda m=i: vibrate_pattern_front(m)).grid(row=0, column=i-1, padx=5)
+    btn = tk.Button(
+        btn_frame,
+        text=f"{i}",
+        font=("Arial", 16),
+        width=5,
+        height=2,
+        command=lambda m=i: (vibrate_pattern_front(m), start_task(m))
+    )
+    btn.grid(row=0, column=i-1, padx=5)
+
+# ======================
+# Task result display (below buttons 1-2-3)
+# ======================
+task_label = tk.Label(
+    root,
+    text="Chưa có thao tác",
+    font=("Arial", 14),
+    width=30,
+    height=2,
+    bg="white",
+    fg="black",
+    relief="solid"
+)
+task_label.pack(pady=5)
+# ======================
+# Condition dropdown tray
+# ======================
+tray_button = tk.Button(
+    root,
+    text=current_condition + "  ▼",
+    font=("Arial", 13),
+    width=40,
+    relief="raised",
+    command=lambda: toggle_tray()
+)
+tray_button.pack(pady=(5, 0))
+tray_frame = tk.Frame(root, bd=1, relief="solid")
+# KHÔNG pack ở đây → mặc định ẩn
+conditions = [
+    "Điều kiện A: Vòng Thesis không có nút",
+    "Điều kiện B: Vòng đầy đủ chức năng",
+    "Điều kiện C: Không có vòng"
+]
+# ======================
+# Timer display
+# ======================
+timer_label = tk.Label(
+    root,
+    text="⏱ 00:00 / 03:00",
+    font=("Arial", 14),
+    width=30,
+    height=2,
+    bg="#222222",
+    fg="white",
+    relief="solid"
+)
+timer_label.pack(pady=(5, 5))
+timer_button = tk.Button(
+    root,
+    text="▶ Bắt đầu đếm thời gian",
+    font=("Arial", 14),
+    width=25,
+    bg="#333333",
+    fg="white",
+    activebackground="#555555",
+    command=lambda: start_timer()
+)
+timer_button.pack(pady=(0, 10))
+
+
+for c in conditions:
+    tk.Button(
+        tray_frame,
+        text=c,
+        anchor="w",
+        font=("Arial", 12),
+        width=38,
+        relief="flat",
+        command=lambda t=c: select_condition(t)
+    ).pack(fill="x", padx=5, pady=2)
+
 
 # ======================
 # Direction logic
 # ======================
+def gyro_enabled():
+    """Chỉ cho phép gyro khi ở Điều kiện B"""
+    return current_condition == "Điều kiện B: Vòng đầy đủ chức năng"
+def update_gyro_label():
+    if gyro_enabled():
+        gyro_label.config(text="GYRO: ON", fg="green")
+    else:
+        gyro_label.config(text="GYRO: OFF", fg="red")
+
 def set_direction_visual(angle_deg):
     angle = angle_deg % 360
     set_motor_visual(0,0,0,0,0,0)
@@ -243,6 +412,47 @@ def set_direction_visual(angle_deg):
         front_left = 1; front = 1
 
     set_motor_visual(front, front_right, back_right, back, back_left, front_left)
+    return [front, front_right, back_right, back, back_left, front_left]
+def toggle_tray():
+    global tray_open
+
+    if tray_open:
+        tray_frame.place_forget()
+        tray_open = False
+        tray_button.config(text=current_condition + "  ▼")
+    else:
+        # Lấy vị trí nút tray_button
+        x = tray_button.winfo_x()
+        y = tray_button.winfo_y() + tray_button.winfo_height()
+
+        tray_frame.place(x=x, y=y)
+        tray_frame.lift()   # luôn nổi trên cùng
+
+        tray_open = True
+        tray_button.config(text=current_condition + "  ▲")
+
+def select_condition(text):
+    global current_condition, tray_open, esp_data, force_directional
+    current_condition = text
+
+    # Reset gyro khi đổi điều kiện
+    if not gyro_enabled():
+        esp_data = {
+            "pitch": 0.0,
+            "roll":  0.0,
+            "state": 0,
+            "ts": 0
+        }
+
+    # Reset ép hướng khi đổi điều kiện
+    force_directional = False
+    force_btn.config(text="🧭 HƯỚNG: TỰ ĐỘNG", bg="gray", fg="white")
+
+    tray_button.config(text=current_condition + "  ▼")
+    tray_frame.place_forget()
+    tray_open = False
+    update_gyro_label()
+
 
 # ======================
 # Update UI
@@ -262,6 +472,46 @@ def update_status_ui(status, dist, coords=None):
     if coords is not None:
         coords_label.config(text=f"Coords: ({coords[0]:.2f}, {coords[1]:.2f}, {coords[2]:.2f})")
     root.update_idletasks()
+def start_timer():
+    global timer_running, timer_start_time
+
+    # Nếu đang chạy HOẶC đã chạy xong → RESET
+    if timer_running or timer_start_time is not None:
+        timer_running = False
+        timer_start_time = None
+
+        timer_label.config(text="⏱ 00:00 / 03:00")
+        timer_button.config(text="▶ Bắt đầu đếm thời gian")
+        return
+
+    # Nếu đang ở 00:00 → START
+    timer_running = True
+    timer_start_time = time.time()
+    timer_button.config(text="🔄 Reset")
+    update_timer()
+
+def update_timer():
+    global timer_running
+
+    if not timer_running:
+        return
+
+    elapsed = time.time() - timer_start_time
+
+    if elapsed >= TIMER_DURATION:
+        elapsed = TIMER_DURATION
+        timer_running = False
+        timer_button.config(text="🔄 Reset")
+
+    minutes = int(elapsed // 60)
+    seconds = int(elapsed % 60)
+
+    timer_label.config(
+        text=f"⏱ {minutes:02d}:{seconds:02d} / 03:00"
+    )
+
+    if timer_running:
+        root.after(500, update_timer)  # cập nhật mỗi 0.5s
 
 # ======================
 # Main loop
@@ -300,18 +550,30 @@ def tick():
         elif s == sock_esp:
             try:
                 data_json = json.loads(msg)
-                # parse additional 'state' optional field
-                esp_data = {
-                    "pitch": data_json.get("pitch", 0),
-                    "roll":  data_json.get("roll", 0),
-                    "state": data_json.get("state", 0),  # <-- new optional field
-                    "ts":    data_json.get("ts", 0)
-                }
+
+                if gyro_enabled():
+                    # Điều kiện B → nhận gyro thật
+                    esp_data = {
+                        "pitch": data_json.get("pitch", 0),
+                        "roll":  data_json.get("roll", 0),
+                        "state": data_json.get("state", 0),
+                        "ts":    data_json.get("ts", 0)
+                    }
+                else:
+                    # Điều kiện A, C → gyro luôn 0
+                    esp_data = {
+                        "pitch": 0.0,
+                        "roll":  0.0,
+                        "state": data_json.get("state", 0),
+                        "ts":    data_json.get("ts", 0)
+                    }
+
                 esp_addr = addr
                 print("ESP data:", esp_data)
+
             except Exception as e:
                 print("Malformed ESP packet:", e)
-                pass
+
 
     now = time.time()
     # only process visualization/logic at PRINT_INTERVAL
@@ -383,35 +645,97 @@ def tick():
         # - If red_dist <= 0.10 => directional on/off pattern
         # - Else => motors 1,2,6 (front, front-right, front-left) continuous
         # ==========================================================
-        if status == "🤝 Vùng giao đồ":
+        if status == "🤝 Vùng giao đồ" or force_directional:
             angle = math.degrees(math.atan2(y, x))
             if angle < 0:
                 angle += 360
 
-            # Directional vibration only if red-green very close (<=10cm)
-            if red_dist <= 0.10:
+            if red_dist <= 0.10 or force_directional:
                 if isVibrating:
                     if now - lastVibrate >= curOn:
                         isVibrating = False
                         lastVibrate = now
                         set_motor_visual(0,0,0,0,0,0)
+                        send_vibration_to_esp(2, [0,0,0,0,0,0])
+
                 else:
                     if now - lastVibrate >= curOff:
                         isVibrating = True
                         lastVibrate = now
-                        set_direction_visual(angle)
+
+                        motors = set_direction_visual(angle)
+                        send_vibration_to_esp(2, motors)
+
             else:
-                # Indicate approach by turning on front, front-right, front-left continuously
-                set_motor_visual(1, 1, 0, 0, 0, 1)
+                set_motor_visual(1,1,0,0,0,1)
+                send_vibration_to_esp(1, [1,1,0,0,0,1])
 
             last_time = now
             root.after(10, tick)
             return
+
         # ==========================================================
 
         last_time = now
 
     root.after(10, tick)
+def start_task(task_id):
+    global task_start_time, current_task, task_done
+    task_start_time = time.time()
+    current_task = task_id
+    task_done = False
+
+    task_label.config(
+        text=f"🟡 Bắt đầu đồ {task_id}\nĐang tính thời gian...",
+        bg="orange",
+        fg="black"
+    )
+
+def finish_task(direction):
+    global task_start_time, current_task, task_done
+
+    if task_start_time is None or task_done:
+        return
+
+    elapsed = time.time() - task_start_time
+    task_done = True
+
+    correct = False
+    if current_task in (1, 2) and direction == "down":
+        correct = True
+    elif current_task == 3 and direction == "right":
+        correct = True
+
+    if correct:
+        task_label.config(
+            text=f"✅ ĐÚNG\n⏱ {elapsed:.2f} s",
+            bg="lightgreen",
+            fg="black"
+        )
+    else:
+        task_label.config(
+            text=f"❌ NHẬN BIẾT NHẦM\n⏱ {elapsed:.2f} s",
+            bg="red",
+            fg="white"
+        )
+
+    task_start_time = None
+    current_task = None
+
+def on_key_press(event):
+    if event.keysym == "1":
+        start_task(1)
+    elif event.keysym == "2":
+        start_task(2)
+    elif event.keysym == "3":
+        start_task(3)
+    elif event.keysym == "Down":
+        finish_task("down")
+    elif event.keysym == "Right":
+        finish_task("right")
+
+root.bind("<KeyPress>", on_key_press)
+root.focus_set()
 
 # Start loop
 root.after(10, tick)
